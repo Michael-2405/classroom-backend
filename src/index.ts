@@ -7,7 +7,7 @@ const app = express();
 const PORT = 8000;
 
 if(!process.env.FRONTEND_URL) {
-    console.warn("FRONTEND_URL not set - CORS will allow all origins");
+    console.warn("FRONTEND_URL not set - CORS is disabled");
 }
 
 app.use(cors({
